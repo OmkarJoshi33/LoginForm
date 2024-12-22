@@ -2,6 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaUser } from "react-icons/fa";
 import { FaLock } from "react-icons/fa";
+import HomePage from "./HomePage";
 
 const LoginForm=()=>{
     return(
@@ -40,9 +41,11 @@ const LoginForm=()=>{
                     </p>
                   </a>
                 </div>
-                <button className="flex flex-col my-5 bg-sky-600 w-full sm:w-5/6 justify-center items-center rounded-3xl h-10 font-bold opacity-55 hover:bg-sky-400">
+                <NavLink to="/HomePage" className="flex flex-col my-5 bg-sky-600 w-full sm:w-5/6 justify-center items-center rounded-3xl h-10 font-bold opacity-55 hover:bg-sky-400">
+                <button >
                   Login
                 </button>
+                </NavLink>
                 <div className="flex w-full justify-center items-center gap-1">
                   <p className="text-white text-sm opacity-55">
                     Don't have an account?

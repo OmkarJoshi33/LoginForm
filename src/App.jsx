@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Outlet, Link, createBrowserRouter ,Router
 
 import RegisterForm from "./component/RegisterForm.jsx";
 import LoginForm from "./component/LoginForm.jsx";
+import HomePage from "./component/HomePage.jsx";
 
 function App() {
   const router=createBrowserRouter([
@@ -14,6 +15,10 @@ function App() {
     {
       path:"/RegisterForm",
       element:<><RegisterForm/></>
+    },
+    {
+      path:"/HomePage",
+      element:<><HomePage/></>
     }
   ])
   
